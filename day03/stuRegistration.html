@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Student Registration Form
+        </h1>
+    </header>
+    <hr>
+    <main>
+<form action="submit" method="POST">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" placeholder="Enter your name..." required/>
+        <br></br>
+        <label for="age">Age:</label>
+        <input placeholder="Enter your age..." type="number"/>
+        <br></br>
+       
+<label>Gender:</label>
+<label>
+    Male
+    <input type="radio" name="gender" value="male">
+    
+</label>
+<label>
+    Female<input type="radio" name="gender" value="female">
+</label>
+<label>
+    Other<input type="radio" name="gender" value="other">
+</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Acedemical Information</legend>
+
+        <label for="qualification">Qualification:</label>
+
+<select name="qualification">
+    <optgroup label="School"><option>12th</option>
+    <option>10th</option>
+    </optgroup>
+    <optgroup label="Graduation">
+    <option>BCA</option>
+    <option>B.Tech</option>
+    </optgroup>
+    <optgroup label="PostGraduation">
+    <option>MCA</option>
+</optgroup>
+</select>
+<br></br>
+<label for="passed year">Passed Year:</label>
+<input type="date">
+
+    </fieldset>
+
+<fieldset>
+    <legend>
+        Details to register
+    </legend>
+    <label for="email">Email:</label>
+    <input type="email" value="email" name="email"  placeholder="Enter your email..." required>
+    <br></br>
+<label for="password">Password:</label>
+<input type="password" value="password" name="password" placeholder="Enter your password..." required>
+
+
+
+</fieldset>
+
+
+
+</form>
+       
+        
+
+    </main>
+    <hr>
+    <footer>
+        <small>  © 2026 Amrita Pandit</small>
+    </footer>
+    
+</body>
+</html>
