@@ -6,16 +6,156 @@
     <title>Job Application</title>
 </head>
 <body><header>
-    <h1>Job Application</h1>
-
+    <h1>Job Application Form</h1>
 </header>
+<hr>
 <main>
+<form action="/submit" method="get">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">
+            Full Name:
+        </label>
+     <input type="text" name="name" required autocomplete="name">
+     <br></br>
+     <label for="email">Email:</label>
+     <input type="email" name="email"  required autocomplete="email">
+     <br></br>
+     <label for="tel">Phone Number:</label>
+     <input type="tel" name="phonenumber"  required autocomplete="tel">
+     <br></br>
+     <label for="date">Date Of Birth</label>
+     <input type="date" name="dateofbirth" required autocomplete="date">
+     <br></br>
+     <label for="gender">Gender:</label>
+     <label></label>
+        Male <input type="radio" name="gender" value="male">
+     </label>
+     <label>
+       Female <input type="radio" name="gender" value="female">
 
+     </label>
+     <label>
+        Other <input type="radio" name="gender" value="other">
+     </label>
+    </fieldset>
+    <fieldset>
+        <legend>Address Details</legend>
+        <label for="city">
+            City:
+        </label>
+        <input type="text" name="city" >
+<br><br>
+<label>
+    State:
+</label>
+<select name="state">
+<option name="state" value="chhattisgarh">Chhattisgarh</option>
+<option name="state" value="himachal paredesh">Himachal Pradesh</optio>
+</select>
+<br><br>
+<label for="country">Country:</label>
+<select name="country">
+    <option name="country" value="india">India</option>
+    <option name="country" value="america">America</option>
+</select>
+
+    </fieldset>
+<fieldset>
+    <legend>
+        Educational Qualification
+    </legend>
+    <label for="qualification"> Qualification:</label>
+    <select for="qualification">
+        <optgroup label="school">
+            <option name="qualification" value="10th">10th</option>
+            <option name="qualification" value="12th">12th</option>
+        </optgroup>
+        <optgroup label="bechlor">
+            <option name="qualification" value="BCA">BCA</option>
+            <option name="qualification" value="B.tech">B.tech</option>
+        </optgroup>
+        <optgroup label="Masters">
+            <option name="qualification" value="MCA">MCA</option>
+            <option name="qualification" value="M.tech">M.tech</option>
+        </optgroup>
+    </select>
+</fieldset>
+<fieldset>
+    <legend>
+Skills
+    </legend>
+  <label>
+    HTML<input type="checkbox" name="skill" value="html">
+  </label>
+  <br>
+  <label>
+    CSS<input type="checkbox" name="skill" value="css">
+  </label>
+  <br>
+  <label>
+    JS<input type="checkbox" name="skill" value="js">
+  </label>
+
+</fieldset>
+<fieldset>
+    <legend>
+        Work Experience
+    </legend>
+    <label>Experience level:</label>
+    <input type="range" min="1" max="10"  name="experiencelevel" value="5">
+    <br><br>
+    <label>
+        Previous Company:
+    </label>
+    <input type="text" name="previouscompany" value="previouscompany">
+    <br><br>
+    <label>Years of Experience:</label>
+    <input type="number" name="yearsofexperience" >
+
+</fieldset>
+<fieldset>
+    <legend>
+        Documents
+    </legend>
+    <label for="resumeupload">Resume Uplaod:</label>
+    <input type="file" name="resume" >
+    <br><br>
+    <label  for="portfoliourl">Porfolio URL</label>
+    <input type="url" name="portfoliourl" value="url"> 
+</fieldset><fieldset>
+    <legend>
+        Additional Information
+    </legend>
+    <label>Expected Salary:</label>
+    <input type="range" min="2000" max="90000" name="expectedsalary" value="50000">
+    <br><br>
+    <label for="joiningdate">Joining Date:</label>
+    <input type="date" name="joiningdate" value="date">
+<br><br>
+<label>Cover letter:</label>
+<textarea >
+    WRite your cover letter here....
+</textarea>
+</fieldset>
+<br>
+<button type="submit">
+Submit Application
+</button>
+
+
+
+
+
+
+</form>
 
     
 </main>
-<footer>
+<hr>
 
+<footer>
+ <small>  © 2026 Amrita Pandit</small>
 </footer>
     
 </body>
